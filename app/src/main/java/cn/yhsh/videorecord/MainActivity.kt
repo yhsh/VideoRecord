@@ -44,8 +44,9 @@ class MainActivity : AppCompatActivity() {
                 mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
                 //设置video的编码格式
                 mediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264)
-                //设置录制的视频编码比特率
-                mediaRecorder.setVideoEncodingBitRate(1024 * 1024);
+                //设置录制的视频编码比特率,越高视频越清晰当前文件也越大
+//                mediaRecorder.setVideoEncodingBitRate(1024 * 1024)
+//                mediaRecorder.setVideoEncodingBitRate(10 * 1920 * 1080);
                 //设置录制的视频帧率,注意文档的说明:
                 mediaRecorder.setVideoFrameRate(30);
                 //设置录制文件输出目录
